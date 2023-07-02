@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</body>
+</html><link rel="stylesheet" href="styles.css">
+<img src="" alt="">
+<h1 id="title">Survey Form</h1>
+<p id="description">Please take a moment to complete this survey form and provide valuable feedback.</p>
+<form id="survey-form">
+  <label id="name-label" for="name">Name</label>
+  <input id="name" type="text" placeholder="Enter your name" required></input>
+  <label id="email-label" for="email">Email</label>
+  <input id="email" type="email" placeholder="Enter your email" required></input>
+  <label id="number-label" for="number">Semester</label>
+  <input id="number" type="number" placeholder="Enter your semester" min="1" max="8" required></input>
+  <select id="dropdown" name="happiness" required>
+    <option value="" disabled selected>Are you happy with the college? (select one)</option>
+    <option value="yes">Yes</option>
+    <option value="no">No</option>
+  </select>
+  <fieldset>
+    <legend>Would you recommend our college to someone else?</legend>
+    <label>
+      <input type="radio" name="referral" value="yes" required>Yes
+    </label>
+    <label>
+      <input type="radio" name="referral" value="no" required>No
+    </label>
+  </fieldset>
+  <fieldset>
+    <legend>You want improvement in which field of the college?</legend>
+    <label>
+      <input type="checkbox" value="academics" name="improvement" required>Academics
+    </label>
+    <label>
+      <input type="checkbox" value="extracurricular" name="improvement" required>Extracurricular Activities
+    </label>
+    <label>
+      <input type="checkbox" value="transport" name="improvement" required>Transport Facility
+    </label>
+    <label>
+      <input type="checkbox" value="canteen" name="improvement" required>Canteen
+    </label>
+    <label>
+      <input type="checkbox" value="others" name="improvement" required>Others
+    </label>
+  </fieldset>
+  <label>
+    Describe your opinion:
+    <textarea rows="3" cols="30" name="opinion" required></textarea>
+  </label>
+  <button id="submit" type="submit" value="Submit">Submit</button>
+</form>
+</head>
+<body>
